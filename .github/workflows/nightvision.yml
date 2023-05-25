@@ -11,6 +11,9 @@ env:
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
       - name: (1) Clone Code
         uses: actions/checkout@v3
