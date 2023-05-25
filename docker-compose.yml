@@ -10,8 +10,8 @@ services:
       - POSTGRES_PASSWORD=postgresql
 
   javavulny:
-    build: .
-    image: stackhawk/javavulny:latest
+    #build: .
+    image: kinnairdm/javavulny:latest
     container_name: javavulny
     environment:
       SPRING_PROFILES_ACTIVE: postgresql
